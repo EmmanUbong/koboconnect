@@ -1,0 +1,242 @@
+/*
+
+Image Gallery
+Scott Stadt
+Last Revised: 3/25/13
+
+Color Pallette
+---------------------------
+
+bg   0%:			#135578
+bg  20%:			#043959
+bg  50%:			#115175
+bg 100%:			#043959
+
+btn light blue:		#4c96b3
+btn dark blue:		#3686a1
+btn light pink:		#a85e7f
+btn dark pink:		#a0335d
+
+*/
+
+/* -------- Document -------- */
+
+/* html {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	background-attachment: fixed;
+	background-image: linear-gradient(bottom, #135578 0%, #043959 20%, #115175 50%, #043959 100%);
+	background-image: -o-linear-gradient(bottom, #135578 0%, #043959 20%, #115175 50%, #043959 100%);
+	background-image: -moz-linear-gradient(bottom, #135578 0%, #043959 20%, #115175 50%, #043959 100%);
+	background-image: -webkit-linear-gradient(bottom, #135578 0%, #043959 20%, #115175 50%, #043959 100%);
+	background-image: -ms-linear-gradient(bottom, #135578 0%, #043959 20%, #115175 50%, #043959 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #135578),
+		color-stop(0.2, #043959),
+		color-stop(0.5, #115175),
+		color-stop(1, #043959)
+	);
+} */
+
+/* body {
+	height: 100%;
+	background-image: url('../images/bg_highlight.png');
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+} */
+
+/* html, body {
+	margin: 0;
+	padding: 0;
+} */
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	overflow: hidden;
+}
+
+#header {
+	width: 960px;
+	height: 50px;
+}
+
+#content {
+	float: left;
+	width: 730px;
+}
+
+/* -------- Typography -------- */
+
+h1 {
+	font-weight: normal;
+	margin-left: 20px;
+}
+
+/* -------- Navigation -------- */
+
+#followbox {
+	float: right;
+	margin: 0;
+	padding: 0;
+	height: 0;
+	width: 200px;
+}
+
+/* #nav-wrapper {
+	float: right;
+	height: 620px;
+	width: 200px;
+	margin-bottom: 50px;
+}
+
+ul#nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} */
+
+
+
+/* -------- Links -------- */
+
+a {
+	text-decoration: none;
+	color: #438fab;
+}
+
+a:hover {
+	color: #a54a6f;
+}
+
+/* -------- Gallery -------- */
+
+#thumbs-wrapper, #viewer-wrapper, #setup-wrapper {
+	padding-left: 58px;
+}
+
+#thumbs-wrapper
+{background-color:#b22222;
+}
+
+/* #viewer-wrapper
+{background-color: rgba(38, 105, 22, 0.2);} */
+
+#setup-wrapper
+{background-color: rgba(153, 15, 112, 0.2);} 
+#viewer-nav{
+	background-color: #b22222	;}
+ #thumbs-nav {
+	background-color: 
+	#2f4f4f;
+	color: #fff;
+}
+
+#viewer-wrapper {
+	height: 348px;
+}
+
+#gallery-viewer {
+	height: 100%;
+}
+
+#gallery-viewer img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 5px;
+	width: 180px !important;
+	height: 80px !important;
+	/* width:"50px" ;height:"200px" ; */
+}
+
+#aimg img {
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 5px;
+	width: 180px !important;
+	height: 80px !important;
+	/* width:"50px" ;height:"200px" ; */
+}
+
+#viewer-nav, #thumbs-nav {
+	height: 30px;
+}
+
+#viewer-nav {
+	margin-top: 2px;
+}
+
+#thumbs-nav {
+	margin-top: 10px;
+	margin-bottom: 2px;
+}
+
+#thumbs-nav p {
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+#gallery-next, #gallery-viewer-next, #gallery-prev, #gallery-viewer-prev {
+	text-indent: -9999px;
+	margin: 6.5px 25px;
+	height: 17px;
+	width: 16px;
+	background-image: url('../images/spt_arrows.png');
+	background-repeat: no-repeat;
+}
+
+#gallery-next, #gallery-viewer-next {
+	background-position: -16px 0;
+	float: right;
+}
+
+#gallery-prev, #gallery-viewer-prev {
+	float: left;
+}
+
+.thumbnail {
+	float: left;
+	width: 140px;
+	height: 138px;
+}
+
+/* -------- Setup -------- */
+
+#setup-wrapper p, pre, dl {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+pre {
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+code {
+	font-weight: normal;
+}
+
+dd {
+	margin-bottom: 10px;
+}
+
+div.scd {
+	text-align: center;
+  }
+  
+  ul.myUL {
+	display: inline-block;
+	text-align: left;
+  }
+
+.gallery-labels {
+	margin-left: 10px;
+}
+
